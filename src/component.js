@@ -33,7 +33,7 @@ export default class TableInput extends React.Component {
   initializeTable = () => {
     const { onChange } = this.props;
     // Add a single row with a single empty cell (1 row, 1 column)
-    const newValue = { rows: [{ _type: 'row', _key: uuid(), cells: [''] }] };
+    const newValue = { rows: [{ _type: 'tableRow', _key: uuid(), cells: [''] }] };
     return onChange(createPatchFrom(newValue));
   };
 
@@ -47,7 +47,7 @@ export default class TableInput extends React.Component {
     const columnCount = value.rows[0].cells.length;
     // Add as many cells as we have columns
     newValue.rows.push({
-      _type: 'row',
+      _type: 'tableRow',
       _key: uuid(),
       cells: Array(columnCount).fill(''),
     });

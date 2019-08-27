@@ -1,8 +1,8 @@
 {
   "name": "sanity-plugin-table",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "Table schema type and input component for Sanity CMS",
-  "main": "lib/schemaType.js",
+  "main": "lib/schema/table.js",
   "scripts": {
     "prepare": "babel src -d lib -D"
   },
