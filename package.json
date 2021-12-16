@@ -21,7 +21,7 @@
   "peerDependencies": {
     "@sanity/uuid": "^3.0.1",
     "@sanity/icons": "^1.0.1",
-    "@sanity/ui": "^0.33.10",
+    "@sanity/ui": "^0.36.17",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.2.1"
